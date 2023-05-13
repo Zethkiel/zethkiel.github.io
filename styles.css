@@ -1,0 +1,112 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #0A0F10;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.banner {
+    flex: 1;
+    display: block;
+    height: 50%;
+    background-image: url(./images/banner.jpg);
+    background-position: 50% 72%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.shadow {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(8,38,140);
+    background: linear-gradient(180deg, rgba(8,38,140,0) 46%, rgba(0,0,0,0.7343312324929971) 100%);
+}
+
+.avatar {
+    position: absolute;
+    top: 65px;
+    left: 145px;
+    height: 160px;
+    width: 160px;
+    border: 10px #0A0F10 solid;
+    border-radius: 50%;
+}
+
+.bottom-header {
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+
+.tag {
+    color: #f1f1f1;
+    font-size: 24px;
+    position: absolute;
+    top: -60px;
+    left: 345px;
+    text-shadow: 1px 0px 6px rgba(0,0,0,0.6);
+}
+
+.bio {
+    position: absolute;
+    color: #c4c4c4;
+    top: -5px;
+    left: 345px;
+}
+
+.navbar {
+    display: flex;
+    background-color: #121C1E;
+    height: 50px;
+    box-shadow: 0px -4px 31px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px -4px 31px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -4px 31px 0px rgba(0,0,0,0.75);
+}
+
+.navbar ul {
+    display: flex;
+    margin: auto;
+    padding: 0;
+    gap: 32px;
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.navbar a {
+    color: #8f8f8f;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #d0d0d0;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    gap: 16px;
+    color: #f1f1f1;
+    background-color: #121C1E;
+}
+
+.content {
+    flex: 1;
+    padding: 0 300px;
+}
